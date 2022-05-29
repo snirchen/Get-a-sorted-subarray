@@ -4,6 +4,10 @@ from input_helpers import ask_for_n_and_k, ask_user_to_fill_array
 
 
 def d_run_solution_with_prints(func):
+    """
+    Decorator that prints each solution results nicely
+    """
+
     def inner(arr: [int], k: int):
         print(f"\n--------------------- {func.__name__} ---------------------\n")
         print(f"The entire array: {arr}\n")
@@ -15,6 +19,9 @@ def d_run_solution_with_prints(func):
 
 @d_run_solution_with_prints
 def first_solution(arr: [int], k: int) -> ([int], int):
+    """
+    This function runs the first solution using heap_extract_min k times
+    """
     min_heap = MinHeap(arr)
     k_sorted = [min_heap.heap_extract_min() for _ in range(k)]
     return k_sorted, min_heap.counter
@@ -22,6 +29,9 @@ def first_solution(arr: [int], k: int) -> ([int], int):
 
 @d_run_solution_with_prints
 def second_solution(arr: [int], k: int) -> ([int], int):
+    """
+    This function runs the second solution using a pivot sort
+    """
     pivot_handler = PivotSort()
     pivot_handler.randomized_select(arr, 0, len(arr) - 1, k, 0)
     pivot_handler.quick_sort(arr, 0, k - 1)

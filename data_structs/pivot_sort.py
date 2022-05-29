@@ -35,6 +35,9 @@ class PivotSort:
             return self.randomized_select(arr, q + 1, r, i - k, comp_counter)
 
     def quick_sort(self, arr: [int], p: int, r: int) -> None:
+        """
+        This function sort an array with a quick sort technique
+        """
         if len(arr) == 1:  # Terminating Condition for recursion. VERY IMPORTANT!
             return arr
         if p < r:
