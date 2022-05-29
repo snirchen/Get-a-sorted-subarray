@@ -39,7 +39,7 @@ def ask_for_n_and_k() -> (int, int):
     while True:
         k = ask_for_integer_input("Please enter k: ", can_be_negative=False)
         if k > n:
-            print("k must be less than n, Try again")
+            print("k must be equal or less than n, Try again")
             continue
         break
     return n, k
