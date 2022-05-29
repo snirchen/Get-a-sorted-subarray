@@ -1,3 +1,7 @@
+"""
+This is the main file. To run the whole project, run this file.
+"""
+
 from data_structs.min_heap import MinHeap
 from data_structs.pivot_sort import PivotSort
 from input_helpers import ask_for_n_and_k, ask_user_to_fill_array

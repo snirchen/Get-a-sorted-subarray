@@ -1,3 +1,7 @@
+"""
+This python file contains a class with akk the relevant functions to do a pivot sort
+"""
+
 import random
 
 

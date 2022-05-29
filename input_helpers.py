@@ -1,3 +1,7 @@
+"""
+This file contains some helper functions for getting an input nicely from the user
+"""
+
 import random
 
 import config

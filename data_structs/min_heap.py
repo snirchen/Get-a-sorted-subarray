@@ -1,3 +1,7 @@
+"""
+This python file contains the min heap structure and its relevant functions
+"""
+
 import math
 
 
